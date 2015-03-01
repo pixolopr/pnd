@@ -1,0 +1,39 @@
+.topbar {
+    background-color: #c92d28 !important;
+    color: white !important;
+}
+.menuuser {
+    background-color: #f6f2f3;
+    height: 25vh;
+}
+.categoryimage {
+    height: 25vh;
+    background-size: 110%;
+    /* margin-top: 43px; */
+    background-position-y: -123px;
+    position: relative;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 1px;
+}
+.catimg1 {
+    background-image: url("../img/beer.jpg");
+}
+.catimg2 {
+    background-image: url("../img/spirit.jpg");
+}
+.catimg3 {
+    background-image: url("../img/wine.jpg");
+}
+.catimg4 {
+    background-image: url("../img/beverages.jpg");
+}
+.categoryname {
+    color: white;
+    /* vertical-align: bottom; */
+    top: 140px;
+    left: 14px;
+    position: relative;
+    font-weight: 500;
+    font-size: x-large;
+}
