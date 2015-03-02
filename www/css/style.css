@@ -6,11 +6,16 @@
     background-color: #f6f2f3;
     height: 25vh;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 .categoryimage {
     height: 25vh;
-    background-size: 110%;
+    background-size: 136%;
     /* margin-top: 43px; */
-    background-position-y: -123px;
+    background-position-y: -83px;
+    background-position-x: -56px;
     position: relative;
     margin-right: 0px;
     border-style: solid;
@@ -31,9 +36,73 @@
 .categoryname {
     color: white;
     /* vertical-align: bottom; */
-    top: 140px;
-    left: 14px;
+    top: 146px;
+    left: 10px;
     position: relative;
     font-weight: 500;
     font-size: x-large;
+}
+.products {
+    background-color: grey;
+    height: 100%;
+    margin-top: -8px;
+}
+.product {
+    height: 24vh;
+    background-color: white;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 5px #353535;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+.resultdesc {
+    font-size: smaller;
+    font-weight: bolder;
+    margin-left: 8px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    color: black;
+}
+.productimage {
+    height: 80%;
+    width: 32%;
+    /* padding: 49px; */
+    /* top: 35px; */
+    display: inline-block;
+    /* position: relative; */
+    /* padding-top: 36px; */
+    /* vertical-align: -webkit-baseline-middle; */
+    background-size: 100%;
+    margin-top: 3%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.productimage1 {
+    background-image: url("../img/beerproduct.jpg");
+    background-repeat: no-repeat;
+}
+.productinfo {
+    background-color: white;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.productdesc {
+    font-size: x-small;
+    color: grey;
+}
+.productcost {
+    color: green;
+}
+.productbutton {} .heart {
+    background-image: url("../img/heart.png");
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 72px;
+    margin-top: 6%;
+    /* margin-bottom: 50%; */
+    margin-left: 5%;
+    display: inline-block;
+    background-size: 50%;
 }
