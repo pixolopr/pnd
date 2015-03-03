@@ -33,6 +33,20 @@ angular.module('starter.controllers', [])
   };
 })
 
+
+.controller('menuCtrl', function($scope, $ionicSideMenuDelegate, $ionicNavBarDelegate) {
+  $scope.togglemenu = function()
+  {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+    
+    console.log("abhay menu");
+    
+    $scope.goback = function()
+    {
+        $ionicNavBarDelegate.back();
+    };
+})
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },

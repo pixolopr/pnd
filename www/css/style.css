@@ -1,3 +1,12 @@
+@font-face {
+    font-family: quicksand;
+    src: url("../fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+    font-family: quicksandbold;
+    src: url("../fonts/Quicksand-Bold.ttf");
+}
+
 .topbar {
     background-color: #c92d28 !important;
     color: white !important;
@@ -41,6 +50,7 @@ a {
     position: relative;
     font-weight: 500;
     font-size: x-large;
+    font-family: quicksandbold;
 }
 .products {
     background-color: grey;
@@ -53,7 +63,7 @@ a {
     width: 96%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 3px 3px 5px #353535;
+    box-shadow: 0px 4px 1px #3F3F3F;
     border-radius: 4px;
     margin-bottom: 2%;
 }

@@ -10,12 +10,16 @@
     <!--<icon src="www/img/logo.png" />-->
     <content src="index.html" />
     <access origin="*" />
-    <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    
+    <icon src="www/img/icon.png" />
+    <gap:splash src="www/img/splash.jpg" />
+    
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
