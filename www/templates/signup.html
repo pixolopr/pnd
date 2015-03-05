@@ -1,0 +1,42 @@
+<ion-view view-title="Sign Up"  >
+  <ion-nav-buttons side="left" ng-controller="menuCtrl">
+        
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        <button menu-toggle="left" class="button button-icon icon ion-home"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-cart"></button>
+    </ion-nav-buttons>
+  <ion-content>
+     
+    <form ng-submit="doLogin()">
+      <div class="list list-inset">
+ <label class="signupsize item item-input">
+    <input type="text" placeholder="Name">
+</label>
+<div class="infotext">Type your real name</div>
+<label class="signupsize item item-input">
+    <input type="text" placeholder="UserName">
+</label>
+<div class="infotext">Enter a Unique Username</div>
+<label class="signupsize item item-input">
+    <input type="text" placeholder="Email">
+</label>
+<div class="infotext">Enter your Email Address</div>
+<label class="signupsize item item-input">
+    <input type="text" placeholder="Password">
+</label>
+<div class="infotext">Minimum 6 charaters</div>
+
+
+  
+</div>
+        
+    </form>
+      <div class="signup"><button class=" button button-full button-positive">
+  Create Account
+</button></div>
+  
+    
+  </ion-content>
+</ion-view>

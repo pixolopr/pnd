@@ -34,7 +34,7 @@ color: #3c7df5;
 .menuimage
 {
     width: 21%;
-    margin-top: 17%;
+    margin-top: 9%;
     margin-left: 8%;
     border-radius: 69%;
 }
@@ -72,7 +72,7 @@ a {
 .categoryname {
     color: white;
     /* vertical-align: bottom; */
-    top: 146px;
+    top: 82%;
     left: 10px;
     position: relative;
     font-weight: 500;
@@ -163,21 +163,72 @@ a {
 }
 .loginbutton
 {
-margin-top: 14%;
-margin-left: 20%;
-width: 53%;
-text-align: -webkit-center;
-    color: white;
+margin-top: 21%;
+margin-left: 3%;
+width: 95%;
+text-align: center;
 }
-.loginbutton2
+.loginbuttontext
 {
-margin-top: 7%;
-margin-left: 20%;
-width: 53%;
-text-align: -webkit-center;
+font-size: 83% ;
+    margin-left: 8%;
+   
+}
+.loginbuttontext2
+{
+font-size: 83% ;
+    margin-left: 3%;
    
 }
 .color
 {
  color: red;
+}
+.loginbutton2
+{
+    margin-left: 3%;
+width: 95%;
+text-align: center;
+    margin-top: 2%;
+}
+.loginbutton3
+{
+    margin-left: 3%;
+width: 95%;
+
+    margin-top: 2%;
+}
+
+.signup
+{
+
+margin-top: 22vh;
+position: inherit;
+    
+}
+.signupsize
+{
+margin-top: 2%;
+
+}
+.infotext
+{
+    font-size: 63%;
+text-align: -webkit-auto;
+    color: darkgray;
+}
+.userimage
+{
+     width: 36%;
+margin-top: 11%;
+margin-left: 32%;
+    border-radius: 69%;
+    display: block;
+   border: 2px solid #c92d28;
+
+}
+.accountlist 
+{
+margin-top: 16%;
+
 }

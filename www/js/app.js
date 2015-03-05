@@ -83,6 +83,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'productsCtrl'
       }
     }
+  })
+    .state('app.signup', {
+    url: "/signup",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/signup.html",
+        controller: 'signupCtrl'
+      }
+    }
+  })
+  .state('app.useraccount', {
+    url: "/useraccount",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/useraccount.html",
+        controller: 'useraccountCtrl'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');

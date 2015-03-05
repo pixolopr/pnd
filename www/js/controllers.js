@@ -63,4 +63,11 @@ angular.module('starter.controllers', [])
 .controller('productsCtrl', function($scope, $stateParams) {
 })
 .controller('loginCtrl', function($scope, $stateParams) {
+})
+.controller('signupCtrl', function($scope, $stateParams) {
+})
+.controller('useraccountCtrl', function($scope, $stateParams) {
 });
+
+
+
