@@ -2,10 +2,10 @@
 <widget id="com.pixolo.pickndrop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>pnd</name>
     <description>
-        An Ionic Framework and Cordova project.
+        An Pixolo Project
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-        Ionic Framework Team
+    <author email="pixoloproductions@gmail.com" href="http://pixolo.co.in/">
+        Pixolo Team
     </author>
     <!--<icon src="www/img/logo.png" />-->
     <content src="index.html" />
