@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic'])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
     // Form data for the login modal
@@ -74,11 +74,38 @@ angular.module('starter.controllers', [])
   ];
     })
 
-.controller('PlaylistCtrl', function ($scope, $stateParams) {
+.controller('PlaylistCtrl', function ($scope, $stateParams, $ionicModal) {
 
-        
-                $(".productpagemargin").css("margin-bottom", $(".footerbuttons").height());
-           
+
+        $(".productpagemargin").css("margin-bottom", $(".footerbuttons").height());
+
+        //BUY MODAL
+        $ionicModal.fromTemplateUrl('templates/buy.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.buymodal = modal;
+        });
+        $scope.closebuymodal = function () {
+            $scope.buymodal.hide();
+        };
+        $scope.openbuymodal = function () {
+            $scope.buymodal.show();
+        };
+        //ADD TO CART MODAL
+        $ionicModal.fromTemplateUrl('templates/addtocart.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.cartmodal = modal;
+        });
+        $scope.closecartmodal = function () {
+            $scope.cartmodal.hide();
+        };
+        $scope.opencartmodal = function () {
+            $scope.cartmodal.show();
+        };
+
     })
     .controller('productsCtrl', function ($scope, $stateParams) {})
     .controller('loginCtrl', function ($scope, $stateParams) {})

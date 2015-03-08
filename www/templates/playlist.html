@@ -1,4 +1,7 @@
 <ion-view view-title="Product" align-title="center">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-cart"></button>
+    </ion-nav-buttons>
     <ion-content class="backgrey">
         <div class="list card">
 
@@ -31,8 +34,8 @@
     </ion-content>
     <div class="bar bar-footer footerbuttons backshadowup">
         <div class="button-bar">
-            <button class="button pndgreen productbutton icon-right ion-android-cart">Add To Cart</button>
-            <button class="button pndred productbutton icon-right ion-bag">Buy Now</button>
+            <button class="button pndgreen productbutton icon-right ion-android-cart" ng-click="opencartmodal()">Add To Cart</button>
+            <button class="button pndred productbutton icon-right ion-bag" ng-click="openbuymodal()">Buy Now</button>
         </div>
     </div>
 </ion-view>

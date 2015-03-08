@@ -11,43 +11,58 @@
 .backgrey {
     background-color: #e1dbdb;
 }
-.frontgrey
-{
+
+.frontgrey {
     background-color: #F2F1F1;
 }
 
 .backshadow {
     box-shadow: 2px 2px 3px #545151;
 }
+
 .backshadowup {
     box-shadow: 0px -1px 5px #545151;
 }
 
 .pndgreen {
-    background-color: rgba(125, 177, 34, 1);
-    color: white;
+    background-color: rgba(125, 177, 34, 1) !important;
+    color: white !important;
 }
 
 .pndgreen:active {
-    background-color: rgba(167, 232, 55, 1);
-    color: white;
+    background-color: rgba(167, 232, 55, 1) !important;
+    color: white !important;
 }
 
 .pndred {
-    background-color: rgba(201, 45, 40, 1);
-    color: white;
+    background-color: rgba(201, 45, 40, 1) !important;
+    color: white !important;
 }
 
 .pndred:active {
-    background-color: rgba(226, 63, 58, 1);
-    color: white;
+    background-color: rgba(226, 63, 58, 1) !important;
+    color: white !important;
 }
+
 .pndredcolor {
     color: rgba(201, 45, 40, 1);
 }
 
-.body {
+body {
     font-family: quicksand;
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.modalview {
+    background-color: rgba(0, 0, 0, 0);
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, 0) !important;
+    top: 12%;
+}
+
+.modalinner {
+    background-color: white;
 }
 
 .topbar {
@@ -319,6 +334,7 @@ a {
 }
 
 .qinput {
+    background-color: #F6F5F5;
     text-align: center;
     color: aqua;
     font-size: inherit;
@@ -334,4 +350,9 @@ a {
 .productbutton {
     font-size: large !important;
     font-weight: 900 !important;
+}
+
+.tcenter1 {
+    margin-top: 8px !important;
+    color: rgb(213, 20, 20);
 }

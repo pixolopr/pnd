@@ -1,0 +1,32 @@
+<ion-modal-view class="modalview">
+    <ion-header-bar class="bar-assertive pndred">
+        <h1 class="title">Add To Cart</h1>
+        <div class="button button-clear" ng-click="closecartmodal()"><span class="icon ion-close"></span>
+        </div>
+    </ion-header-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-cart"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="modalinner" style="margin-top: 44px;">
+            <div class="textcenter" style="border-bottom: thin solid rgba(201, 45, 40, 1);">
+                <h3 class="alcoholproductname tcenter1">Premium Lager Beer</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="item-input textcenter">
+                        <span class="input-label">Quantity</span>
+                    </label>
+                </div>
+                <div class="col">
+                    <input class="qinput" type="number" value="3">
+                </div>
+            </div>
+            <textarea class="qinput" placeholder="Write your comment here if any"></textarea>
+            <button class="button button-block button-assertive pndred icon-right ion-android-cart">
+                Add To Cart
+            </button>
+        </div>
+
+    </ion-content>
+</ion-modal-view>
