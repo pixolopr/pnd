@@ -2,54 +2,99 @@
     font-family: quicksand;
     src: url("../fonts/Quicksand-Regular.ttf");
 }
+
 @font-face {
     font-family: quicksandbold;
     src: url("../fonts/Quicksand-Bold.ttf");
+}
+
+.backgrey {
+    background-color: #e1dbdb;
+}
+.frontgrey
+{
+    background-color: #F2F1F1;
+}
+
+.backshadow {
+    box-shadow: 2px 2px 3px #545151;
+}
+.backshadowup {
+    box-shadow: 0px -1px 5px #545151;
+}
+
+.pndgreen {
+    background-color: rgba(125, 177, 34, 1);
+    color: white;
+}
+
+.pndgreen:active {
+    background-color: rgba(167, 232, 55, 1);
+    color: white;
+}
+
+.pndred {
+    background-color: rgba(201, 45, 40, 1);
+    color: white;
+}
+
+.pndred:active {
+    background-color: rgba(226, 63, 58, 1);
+    color: white;
+}
+.pndredcolor {
+    color: rgba(201, 45, 40, 1);
+}
+
+.body {
+    font-family: quicksand;
 }
 
 .topbar {
     background-color: #c92d28 !important;
     color: white !important;
 }
+
 .menuuser {
     background-color: #f6f2f3;
     height: 21vh;
-   
 }
-.menutext
-{
+
+.menutext {
     margin-top: -16%;
     margin-left: 31%;
 }
-.menutext2
-{
+
+.menutext2 {
     margin-left: 31%;
     font-size: 80%;
 }
-.link
-{
-color: #3c7df5;
+
+.link {
+    color: #3c7df5;
 }
 
-.menuimage
-{
+.menuimage {
     width: 21%;
     margin-top: 9%;
     margin-left: 8%;
     border-radius: 69%;
 }
-.iconcolor
-{
-color:  #c82d28;
+
+.iconcolor {
+    color: #c82d28;
 }
+
 a {
     color: inherit;
     text-decoration: none;
 }
+
 .categoryimage {
     height: 25vh;
     background-size: 136%;
     /* margin-top: 43px; */
+    
     background-position-y: -83px;
     background-position-x: -56px;
     position: relative;
@@ -57,21 +102,27 @@ a {
     border-style: solid;
     border-width: 1px;
 }
+
 .catimg1 {
     background-image: url("../img/beer.jpg");
 }
+
 .catimg2 {
     background-image: url("../img/spirit.jpg");
 }
+
 .catimg3 {
     background-image: url("../img/wine.jpg");
 }
+
 .catimg4 {
     background-image: url("../img/beverages.jpg");
 }
+
 .categoryname {
     color: white;
     /* vertical-align: bottom; */
+    
     top: 82%;
     left: 10px;
     position: relative;
@@ -79,11 +130,13 @@ a {
     font-size: x-large;
     font-family: quicksandbold;
 }
+
 .products {
     background-color: grey;
     height: 100%;
     margin-top: -8px;
 }
+
 .product {
     height: 24vh;
     background-color: white;
@@ -94,6 +147,7 @@ a {
     border-radius: 4px;
     margin-bottom: 2%;
 }
+
 .resultdesc {
     font-size: smaller;
     font-weight: bolder;
@@ -102,133 +156,182 @@ a {
     margin-bottom: 4px;
     color: black;
 }
+
 .productimage {
     height: 80%;
     width: 32%;
     /* padding: 49px; */
     /* top: 35px; */
+    
     display: inline-block;
     /* position: relative; */
     /* padding-top: 36px; */
     /* vertical-align: -webkit-baseline-middle; */
+    
     background-size: 100%;
     margin-top: 3%;
     background-position-y: 50%;
     background-position-x: 50%;
 }
+
 .productimage1 {
     background-image: url("../img/beerproduct.jpg");
     background-repeat: no-repeat;
 }
+
 .productinfo {
     background-color: white;
     margin-left: 15px;
     margin-top: 8px;
 }
+
 .productdesc {
     font-size: x-small;
     color: grey;
 }
+
 .productcost {
     color: green;
 }
-.productbutton {} .heart {
+
+.productbutton {}
+
+.heart {
     background-image: url("../img/heart.png");
     background-repeat: no-repeat;
     height: 72px;
     width: 72px;
     margin-top: 6%;
     /* margin-bottom: 50%; */
+    
     margin-left: 5%;
     display: inline-block;
     background-size: 50%;
 }
-.logintext
-{
-  text-align: center;
+
+.logintext {
+    text-align: center;
     font-weight: bolder;
 }
-.logintext2
-{
-  text-align: center;
+
+.logintext2 {
+    text-align: center;
     color: #3c7df5;
     font-weight: bolder;
-   
 }
-.forgotpassword
-{
+
+.forgotpassword {
     text-align: right;
-    color: #3c7df5; 
+    color: #3c7df5;
+}
 
+.loginbutton {
+    margin-top: 21%;
+    margin-left: 3%;
+    width: 95%;
+    text-align: center;
 }
-.loginbutton
-{
-margin-top: 21%;
-margin-left: 3%;
-width: 95%;
-text-align: center;
-}
-.loginbuttontext
-{
-font-size: 83% ;
+
+.loginbuttontext {
+    font-size: 83%;
     margin-left: 8%;
-   
 }
-.loginbuttontext2
-{
-font-size: 83% ;
-    margin-left: 3%;
-   
-}
-.color
-{
- color: red;
-}
-.loginbutton2
-{
-    margin-left: 3%;
-width: 95%;
-text-align: center;
-    margin-top: 2%;
-}
-.loginbutton3
-{
-    margin-left: 3%;
-width: 95%;
 
+.loginbuttontext2 {
+    font-size: 83%;
+    margin-left: 3%;
+}
+
+.color {
+    color: red;
+}
+
+.loginbutton2 {
+    margin-left: 3%;
+    width: 95%;
+    text-align: center;
     margin-top: 2%;
 }
 
-.signup
-{
-
-margin-top: 22vh;
-position: inherit;
-    
+.loginbutton3 {
+    margin-left: 3%;
+    width: 95%;
+    margin-top: 2%;
 }
-.signupsize
-{
-margin-top: 2%;
 
+.signup {
+    margin-top: 22vh;
+    position: inherit;
 }
-.infotext
-{
+
+.signupsize {
+    margin-top: 2%;
+}
+
+.infotext {
     font-size: 63%;
-text-align: -webkit-auto;
+    text-align: -webkit-auto;
     color: darkgray;
 }
-.userimage
-{
-     width: 36%;
-margin-top: 11%;
-margin-left: 32%;
+
+.userimage {
+    width: 36%;
+    margin-top: 11%;
+    margin-left: 32%;
     border-radius: 69%;
     display: block;
-   border: 2px solid #c92d28;
-
+    border: 2px solid #c92d28;
 }
-.accountlist 
-{
-margin-top: 16%;
 
+.accountlist {
+    margin-top: 16%;
+}
+/*ALCOHOL PRODUCT PAGE*/
+
+.footerbuttons {
+    margin-bottom: 0px;
+    position: fixed;
+    height: 55px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.alcoholproductname {
+    display: inline-block;
+    font-family: quicksand;
+    font-weight: bold !important;
+    font-size: x-large !important;
+}
+
+.bigtext {
+    font-weight: inherit;
+    font-size: small !important;
+    font-family: quicksand;
+    color: #ADA3A3 !important;
+}
+
+.veticalcenter p {
+    font-size: larger;
+    font-weight: bold;
+    transform: translate(0, -20%);
+}
+
+.qinput {
+    text-align: center;
+    color: aqua;
+    font-size: inherit;
+    font-weight: 700;
+    font-style: italic;
+    color: lightcoral;
+}
+
+.moneycolor {
+    color: #19fa63 !important;
+}
+
+.productbutton {
+    font-size: large !important;
+    font-weight: 900 !important;
 }
