@@ -1,6 +1,17 @@
 angular.module('starter.controllers', ['ionic'])
 
-.controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPlatform) {
+    
+    $ionicPlatform.ready(function () {
+        /*if (navigator.splashscreen) {
+            console.warn('Hiding splash screen');
+            // We're done initializing, remove the splash screen
+            navigator.splashscreen.hide();
+        }*/
+            navigator.splashscreen.show();
+        
+    });
+    //navigator.splashscreen.show();
     // Form data for the login modal
     /*$scope.loginData = {};
 
