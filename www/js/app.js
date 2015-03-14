@@ -38,6 +38,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+   .state('app.help', {
+    url: "/help",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/help.html"
+      }
+    }
+  })
 
   .state('app.browse', {
     url: "/browse",
@@ -93,12 +101,57 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.helptext', {
+    url: "/helptext",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/helptext.html",
+       
+      }
+    }
+  })
+   .state('app.detail', {
+    url: "/detail",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/detail.html",
+       
+      }
+    }
+  })
+   .state('app.feedback', {
+    url: "/feedback",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/feedback.html",
+        
+      }
+    }
+  })
+  .state('app.shortlist', {
+    url: "/shortlist",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/shortlist.html",
+      
+      }
+    }
+  })
   .state('app.useraccount', {
     url: "/useraccount",
     views: {
       'menuContent': {
         templateUrl: "templates/useraccount.html",
         controller: 'useraccountCtrl'
+      }
+    }
+  })
+  .state('app.order', {
+    url: "/order",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/order.html",
+       
       }
     }
   });

@@ -1,0 +1,26 @@
+<ion-view view-title="Feedback"  >
+  <ion-nav-buttons side="left" ng-controller="menuCtrl">
+        
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        <button menu-toggle="left" class="button button-icon icon ion-home"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-cart"></button>
+    </ion-nav-buttons>
+  <ion-content>
+ <div class="list list-inset feedbackbuttons">
+  <label class="item item-input ">
+    <input type="text" placeholder="Name">
+  </label>
+  <label class="item item-input feedbackbuttons">
+    <input type="text" placeholder="Email">
+  </label>
+     <label class="item item-input feedbackbuttons" style="height:102px; padding-bottom:14%;">
+         <textarea  placeholder="Message"></textarea>
+  </label>
+     <button class="button button-full button-positive">
+  Submit
+</button>
+</div>
+  </ion-content>
+</ion-view>
