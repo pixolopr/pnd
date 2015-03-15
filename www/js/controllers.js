@@ -8,7 +8,7 @@ angular.module('starter.controllers', ['ionic'])
             // We're done initializing, remove the splash screen
             navigator.splashscreen.hide();
         }*/
-            navigator.splashscreen.show();
+            //navigator.splashscreen.show();
         
     });
     //navigator.splashscreen.show();
