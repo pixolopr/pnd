@@ -8,7 +8,7 @@
         Pixolo Team
     </author>
 
-    <icon src="../platforms/android/res/logo.png" />
+    <icon src="..platforms/android/res/logo.png" />
 
     <platform name="android">
         <!-- you can use any density that exists in the Android project -->
