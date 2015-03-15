@@ -1,15 +1,15 @@
 angular.module('starter.controllers', ['ionic'])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPlatform) {
-    
+
     $ionicPlatform.ready(function () {
         /*if (navigator.splashscreen) {
             console.warn('Hiding splash screen');
             // We're done initializing, remove the splash screen
             navigator.splashscreen.hide();
         }*/
-            //navigator.splashscreen.show();
-        
+        //navigator.splashscreen.show();
+
     });
     //navigator.splashscreen.show();
     // Form data for the login modal
@@ -121,4 +121,11 @@ angular.module('starter.controllers', ['ionic'])
     .controller('productsCtrl', function ($scope, $stateParams) {})
     .controller('loginCtrl', function ($scope, $stateParams) {})
     .controller('signupCtrl', function ($scope, $stateParams) {})
-    .controller('useraccountCtrl', function ($scope, $stateParams) {});
+    .controller('helpCtrl', function ($scope, $stateParams, $ionicTabsDelegate) {
+    $scope.tabselect = false;
+        $scope.selectTabWithIndex = function (index) {
+            
+        }
+    })
+    .controller('useraccountCtrl', function ($scope, $stateParams) {})
+    .controller('editprofileCtrl', function ($scope, $stateParams) {});

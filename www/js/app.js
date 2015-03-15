@@ -106,7 +106,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: "templates/helptext.html",
-       
+        controller: 'helpCtrl'
       }
     }
   })
@@ -143,6 +143,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       'menuContent': {
         templateUrl: "templates/useraccount.html",
         controller: 'useraccountCtrl'
+      }
+    }
+  })
+  .state('app.editprofile', {
+    url: "/editprofile",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/editprofile.html",
+        controller: 'editprofileCtrl'
       }
     }
   })

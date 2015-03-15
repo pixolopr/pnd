@@ -8,6 +8,14 @@
     src: url("../fonts/Quicksand-Bold.ttf");
 }
 
+.givefont {
+    font-family: quicksand;
+}
+
+.givefontbolf {
+    font-family: quicksandbold;
+}
+
 .backgrey {
     background-color: #e1dbdb;
 }
@@ -25,13 +33,16 @@
 }
 
 .pndgreen {
-    background-color: rgba(125, 177, 34, 1) !important;
+    background-color: rgba(51, 201, 40, 1) !important;
     color: white !important;
 }
 
 .pndgreen:active {
-    background-color: rgba(167, 232, 55, 1) !important;
+    background-color: rgba(51, 201, 40, 1) !important;
     color: white !important;
+}
+.pndgreencolor {
+    color: rgba(51, 201, 40, 1) !important;
 }
 
 .pndred {
@@ -51,6 +62,7 @@
 body {
     font-family: quicksand;
     cursor: url('http://ionicframework.com/img/finger.png'), auto;
+    background-color: #e1dbdb;
 }
 
 .modalview {
@@ -356,35 +368,37 @@ a {
     margin-top: 8px !important;
     color: rgb(213, 20, 20);
 }
-.trackbutton
-{
 
-height: 2%;
-top: 28%;
+.trackbutton {
+    height: 2%;
+    top: 28%;
 }
-.shortlisticons
-{
- font-size: 38px;
+
+.shortlisticons {
+    font-size: 38px;
     color: #c92d28;
-
-}
-.feedbackbuttons
-{
-margin-top: 2%;
 }
 
-.helptext
-{
-margin-top:50%;padding: 3%;
+.feedbackbuttons {
+    margin-top: 2%;
 }
-.orderbuttons
-{
+
+.helptext {
+    margin-top: 50%;
+    padding: 3%;
+}
+
+.orderbuttons {
     margin-left: 4%;
     margin-top: 2%;
     margin-bottom: 4%;
-    
 }
-.noborder
-{
-   border-bottom: 0;
+
+.noborder {
+    border-bottom: 0;
+}
+
+.spanarrow {
+    position: absolute;
+    top: 43%;
 }
