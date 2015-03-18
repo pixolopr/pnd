@@ -118,13 +118,31 @@ angular.module('starter.controllers', ['ionic'])
         };
 
     })
-    .controller('productsCtrl', function ($scope, $stateParams) {})
-    .controller('loginCtrl', function ($scope, $stateParams) {})
+    .controller('productsCtrl', function ($scope, $stateParams, MyServices) {
+        $scope.productdata = [];
+        var productsuccess = function (data, status) {
+            $scope.productdata = data;
+        };
+        MyServices.getproducts().success(productsuccess);
+    })
+    .controller('loginCtrl', function ($scope, $stateParams, MyServices, $location) {
+        $scope.login = {};
+        $scope.login.username = "";
+        $scope.login.password = "";
+        var loginsuccess = function (data, status) {
+            if (data != "false") {
+                $location.path("#/app/playlists");
+            };
+        };
+        $scope.loginbutton = function () {
+            MyServices.login($scope.login).success(loginsuccess);
+        };
+    })
     .controller('signupCtrl', function ($scope, $stateParams) {})
     .controller('helpCtrl', function ($scope, $stateParams, $ionicTabsDelegate) {
-    $scope.tabselect = false;
+        $scope.tabselect = false;
         $scope.selectTabWithIndex = function (index) {
-            
+
         }
     })
     .controller('useraccountCtrl', function ($scope, $stateParams) {})
