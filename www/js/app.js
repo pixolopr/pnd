@@ -155,6 +155,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
       }
     }
   })
+   .state('app.subcategory', {
+    url: "/subcategory",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/subcategory.html",
+        
+      }
+    }
+  })
   .state('app.order', {
     url: "/order",
     views: {

@@ -1,4 +1,4 @@
-<ion-view view-title="Login"  >
+<ion-view view-title="Login"  > <span class="title"></span>
   <ion-nav-buttons side="left" ng-controller="menuCtrl">
         
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
@@ -7,38 +7,25 @@
     <ion-nav-buttons side="right">
         <button class="button button-icon icon ion-android-cart"></button>
     </ion-nav-buttons>
-  <ion-content>
-      <div class="logintext"> 
-          New user?
-      </div>
-         <div class="logintext2"> 
-          <a href="#/app/signup">Sign up here</a>
-      </div>
-    <form ng-submit="doLogin()">
-      <div class="list list-inset">
-  <label class="item item-input">
-    <input type="text" ng-model="login.username" placeholder="UserName">
-  </label>
-  <label class=" item item-input">
-    <input type="password" ng-model="login.password" placeholder="Password">
-  </label>
-   
+ <ion-content>
 
-    <button class="button button-block button-positive" type="submit" ng-click="loginbutton()">Login</button>
-    <div class="forgotpassword">Forgot password?</div>
+   <button class="button fbbutton givefont"> <div><span class=" customicon ion-social-facebook"></span>Login with Facebook</div></button>
+    <button class="button fbbutton1 givefont">
+       <div><span class=" customicon ion-social-googleplus"></span>Login with Google</div>
+    </button>
+    <button class="button fbbutton2 givefont">
+        Login
+    </button>
+   <a href="#/app/signup"> <button class="button fbbutton3 givefont">
+        Sign up
+    </button></a>
+    <div class="footer givefont">By joining you agree to our <u>Terms and Conditions</u>
+    </div>
+    <!--<div class=" loginimage">
+        <img src="img/Login.png">
 
-</div>
-        
-    </form>
-      
-  <button class="loginbutton2 button button-outline button-positive">
-        <span class="loginbuttontext">Login with Facebook</span>
-      <div class="ion-social-facebook" style="margin-left: -48%; margin-top: -15%;"></div>
-      </button>
-      <button class="loginbutton3  button button-outline button-assertive">
-        <span class="loginbuttontext2">Login with Google</span>
-           <div class="ion-social-googleplus" style="margin-left: -48%; margin-top: -15%;"></div>
-      </button>
-    
-  </ion-content>
+    </div>-->
+
+
+</ion-content>
 </ion-view>
