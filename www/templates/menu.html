@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable topbar">
+    <ion-nav-bar class="bar-stable topbar" >
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -17,53 +17,87 @@
       <h1 class="title topbar">Menu</h1>
     </ion-header-bar>
     <ion-content>
-    
+     
+  
      <div class="menuuser">
        
-       <a menu-close href="#/app/useraccount"> <img src="img/loginperson.png" class="menuimage"> </a>
+       <a menu-close href="#/app/useraccount"> <img src="img/loginperson.jpg" class="menuimage"> </a>
     
         
       <div class="menutext">Welcome Guest <a menu-close href="#/app/login"><span class="link">(Sign in)</a></span></div>
-      <div class="menutext2">Sign in to be able to order</div>
+     
      </div>
       <ion-list>
        <div class="list">
 
-    <a menu-close class="item item-icon-left" href="#/app/playlists">
+    <a menu-close class="item item-icon-left menulist" href="#/app/playlists">
+        <div class="menuicon ">
+         <span class="menucolor"> Home</span>
+        </div>
         <i class="iconcolor icon ion-ios-home"></i>
-        Home
+    
+         
     </a>
 
-    <a menu-close class="item item-icon-left" href="#">
+    <a menu-close class="item item-icon-left menulist" href="#">
+         <i class="menuicon "></i>
         <i class="iconcolor icon ion-email"></i>
-        Offers
+        <span class="menucolor"> Offers </span>
+         
     </a>
 
-     <a menu-close class="item item-icon-left" href="#/app/search">
-        <i class="iconcolor icon ion-search"></i>
-        Search
+     <a menu-close class="item item-icon-left menulist" href="#/app/search">
+        <i class="menuicon "></i>
+         <i class="iconcolor icon ion-search"></i>
+         <span class="menucolor"> Search </span>
+        
     </a>
 
-    <a menu-close class="item item-icon-left" href="#/app/shortlist">
+   <!-- <a menu-close class="item item-icon-left menulist" href="#/app/shortlist">
+       
+          <i class="menuicon "></i>
         <i class="iconcolor icon ion-ios-heart"></i>
-        Shortlisted
-    </a>
+        <span class="menucolor">  Shortlisted</span>
+       
+    </a>-->
 
-    <a menu-close class="item item-icon-left" href="#/app/order">
+    <a menu-close class="item item-icon-left menulist" href="#/app/order">
+         <i class="menuicon "></i>
         <i class="iconcolor icon ion-android-pin"></i>
-        Your Orders
+        <span class="menucolor"> Your Orders </span>
+        
     </a>
 
    
 
-    <a menu-close class="item item-icon-left" href="#/app/help">
+   <!-- <a menu-close class="item item-icon-left menulist" href="#/app/help">
+       <i class="menuicon "></i>
         <i class="iconcolor icon ion-help-circled"></i>
-        Help & Feedback
+        <span class="menucolor"> Help & Feedback</span>
+         
     </a>
-
-    <a menu-close class="item item-icon-left" href="#">
-        <i class="iconcolor icon ion-android-star"></i>
-        Rate us
+-->
+    
+         <a menu-close class="item item-icon-left menulist" href="#/app/shortlist">
+       
+          <i class="menuicon "></i>
+        <i class="iconcolor "></i>
+        <span class="menucolor">  </span>
+       
+    </a>
+ <a menu-close class="item item-icon-left menulist" href="#/app/shortlist">
+       
+          <i class="menuicon "></i>
+        <i class="iconcolor "></i>
+        <span class="menucolor">  </span>
+       
+    </a>
+ <a menu-close class="item item-icon-left menulist" href="#/app/shortlist">
+       
+          <i class="menuicon "></i>
+        <i class="iconcolor "></i>
+        <span class="menucolor">  </span>
+       
     </a>
 
 </div>

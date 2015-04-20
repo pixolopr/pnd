@@ -30,7 +30,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
+ /* .state('app.search', {
     url: "/search",
     views: {
       'menuContent': {
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         templateUrl: "templates/browse.html"
       }
     }
-  })
+  })*/
     .state('app.playlists', {
       url: "/playlists",
       views: {
@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
       }
     }
   })
-    .state('app.signup', {
+   /* .state('app.signup', {
     url: "/signup",
     views: {
       'menuContent': {
@@ -100,8 +100,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         controller: 'signupCtrl'
       }
     }
-  })
-  .state('app.helptext', {
+  })*/
+  /*.state('app.helptext', {
     url: "/helptext",
     views: {
       'menuContent': {
@@ -109,8 +109,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         controller: 'helpCtrl'
       }
     }
-  })
-   .state('app.detail', {
+  })*/
+  /* .state('app.detail', {
     url: "/detail",
     views: {
       'menuContent': {
@@ -118,8 +118,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
        
       }
     }
-  })
-   .state('app.feedback', {
+  })*/
+  /* .state('app.feedback', {
     url: "/feedback",
     views: {
       'menuContent': {
@@ -136,8 +136,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
       
       }
     }
-  })
-  .state('app.useraccount', {
+  })*/
+  /*.state('app.useraccount', {
     url: "/useraccount",
     views: {
       'menuContent': {
@@ -145,8 +145,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         controller: 'useraccountCtrl'
       }
     }
-  })
-  .state('app.editprofile', {
+  })*/
+  /*.state('app.editprofile', {
     url: "/editprofile",
     views: {
       'menuContent': {
@@ -154,8 +154,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         controller: 'editprofileCtrl'
       }
     }
-  })
-   .state('app.subcategory', {
+  })*/
+  /* .state('app.subcategory', {
     url: "/subcategory",
     views: {
       'menuContent': {
@@ -172,7 +172,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
        
       }
     }
-  });
+  })*/;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
 });
