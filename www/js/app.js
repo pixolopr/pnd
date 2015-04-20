@@ -30,7 +30,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
     controller: 'AppCtrl'
   })
 
- /* .state('app.search', {
+  .state('app.search', {
     url: "/search",
     views: {
       'menuContent': {
@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
       }
     }
   })
-   .state('app.help', {
+  /* .state('app.help', {
     url: "/help",
     views: {
       'menuContent': {
@@ -54,8 +54,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         templateUrl: "templates/browse.html"
       }
     }
-  })*/
-    .state('app.playlists', {
+  })
+  */  .state('app.playlists', {
       url: "/playlists",
       views: {
         'menuContent': {
