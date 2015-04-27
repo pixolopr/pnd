@@ -1,4 +1,8 @@
+var cart = [];
+
 angular.module('starter.controllers', ['ionic'])
+
+
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicPlatform) {
 
@@ -118,12 +122,60 @@ angular.module('starter.controllers', ['ionic'])
         };
 
     })
-    .controller('productsCtrl', function ($scope, $stateParams, MyServices) {
+    .controller('productsCtrl', function ($scope, $stateParams, MyServices, $location) {
         $scope.productdata = [];
-        var productsuccess = function (data, status) {
+        /*var productsuccess = function (data, status) {
             $scope.productdata = data;
         };
-        MyServices.getproducts().success(productsuccess);
+        MyServices.getproducts().success(productsuccess);*/
+
+
+        $scope.productdata = [{
+            "id": 1,
+            "name": "Alcohol 1",
+            "quantity": "350ml Can",
+            "cost": "30"
+        }, {
+            "id": 2,
+            "name": "Alcohol 2",
+            "quantity": "250ml Can",
+            "cost": "60"
+        }, {
+            "id": 3,
+            "name": "Alcohol 3",
+            "quantity": "150ml Can",
+            "cost": "10"
+        }, {
+            "id": 4,
+            "name": "Alcohol 4",
+            "quantity": "70ml Can",
+            "cost": "5"
+        }];
+
+        $scope.addtocart = function (index) {
+            console.log(cart.indexOf($scope.productdata[index]));
+            if (cart.indexOf($scope.productdata[index]) > -1) {
+                cart[cart.indexOf($scope.productdata[index])].number++;
+                console.log(cart);
+                console.log("added");
+            } else {
+                cart.push($scope.productdata[index]);
+                cart[cart.length - 1].number = 1;
+            };
+            console.log("added");
+        };
+    
+    $scope.opencart = function()
+    {
+        $location.path("/app/cart");
+    };
+
+
+    })
+
+    .controller('cartCtrl', function ($scope, $stateParams) {
+        $scope.carto = [];
+        $scope.carto = cart;
     })
     .controller('loginCtrl', function ($scope, $stateParams, MyServices, $location) {
         $scope.login = {};

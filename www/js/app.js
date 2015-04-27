@@ -87,8 +87,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
     url: "/products",
     views: {
       'menuContent': {
-        templateUrl: "templates/products.html",
+        templateUrl: "templates/subcategory.html",
         controller: 'productsCtrl'
+      }
+    }
+  })
+  .state('app.cart', {
+    url: "/cart",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/cart.html",
+        controller: 'cartCtrl'
       }
     }
   })

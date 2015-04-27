@@ -1,23 +1,25 @@
-<ion-view view-title="Beers">
+<ion-view view-title="Cart">
     <ion-nav-buttons side="left" ng-controller="menuCtrl">
 
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
         <button menu-toggle="left" class="button button-icon icon ion-home"></button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-        <button class="button button-icon icon ion-android-cart" ng-click="opencart()"></button>
+        <button class="button button-icon icon ion-android-cart"></button>
     </ion-nav-buttons>
     <ion-content>
-        <div class="product row" ng-repeat="product in productdata">
+        <div class="product row" ng-repeat="product in carto">
             <div class="col col-66">
                 <div class="productinfo ">
                     {{product.name}}</br>
-                    {{product.quantity}}</div>
+                    {{product.quantity}}
+                </div>
+                <p class="number">X {{product.number}}</p>
             </div>
             <div class="col">
                 <div class="  ">
-                    <p class="productcost">${{product.cost}}</p>
-                    <button class="cart button button-icon icon ion-android-cart" ng-click="addtocart($index)"></button>
+
+                    <p class="productcost">${{product.cost * product.number}}</p>
                 </div>
             </div>
 
