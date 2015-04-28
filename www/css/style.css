@@ -648,3 +648,12 @@ a {
     padding-right: 10%;
     padding-top: 32%;
 }
+
+.leftalign {
+    display: inline;
+    margin-left: 5%;
+}
+.rightalign {
+    display: inline;
+    margin-right: 5%;
+}
